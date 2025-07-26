@@ -1,61 +1,57 @@
 # 📊 GoFinance: Personal Expense Tracker CLI
 
-description: >
-  GoFinance is a powerful command-line tool to track income and expenses, manage budgets, and generate reports with ease. Built using Go, Cobra CLI, and BoltDB, it provides a smooth local finance management experience right from your terminal.
+**GoFinance** is a command-line tool written in Go that helps you track your income, expenses, and budgets. It uses `Cobra` for CLI commands and `BoltDB` for persistent local storage.
 
-badges:
-  - "Built with Go 🧬"
-  - "Cobra CLI 🐍"
-  - "BoltDB Storage 🗄️"
-  - "100% Offline Support 🚫🌐"
+## 🚀 Features
 
-features:
-  - 🚀 Fast and intuitive CLI interface
-  - 💵 Add income and expenses with category, amount, and notes
-  - 📅 View entries by day, month, or custom range
-  - 📊 Generate summaries and reports (total, by category, etc.)
-  - 💾 Store all data locally using BoltDB
-  - 📤 Export transactions to CSV or JSON
-  - 🎯 Budget tracking by category
-  - 🧹 Clear data or remove entries by ID
+- ✅ Add income or expense entries
+- 🗃️ View all saved transactions
+- 📤 Export your transactions to CSV
+- 📊 Generate summary reports (total income, expenses, balance)
+- 💾 Local persistent storage using BoltDB
+- ⚡ Fast and efficient CLI experience
 
-usage:
-  - `gofinance add income 5000 --category salary --note "July Salary"`
-  - `gofinance add expense 1200 --category groceries --note "Walmart"`
-  - `gofinance list --month July`
-  - `gofinance report`
-  - `gofinance export --format csv`
+## 🧱 Tech Stack
 
-installation:
-  - Install Go from https://golang.org
-  - Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/gofinance-cli-tracker-golang
-    cd gofinance-cli-tracker-golang
-    go build -o gofinance
-    ./gofinance
-    ```
+- **Go**: Main programming language
+- **Cobra**: CLI toolkit
+- **BoltDB**: Embedded key-value database
 
-project_structure:
-  - `main.go` – Entry point and CLI command routing
-  - `db.go` – Handles BoltDB transactions and storage
-  - `commands/` – Cobra CLI command definitions (add, list, export, etc.)
-  - `models/` – Data models for transactions
-  - `exporter/` – CSV and JSON export functions
-  - `README.md` – Project documentation
+## 🛠️ Installation
 
-tech_stack:
-  - Language: Go
-  - CLI Framework: Cobra
-  - Storage: BoltDB
-  - Output: Terminal + CSV/JSON files
+```bash
+git clone https://github.com/yourusername/gofinance-cli-tracker.git
+cd gofinance-cli-tracker
+go build -o gofinance
+./gofinance
+```
 
-future_plans:
-  - 🔒 Password protection or encrypted storage
-  - 🌐 Optional sync to cloud/remote
-  - 📱 GUI/REST API version
-  - 📦 Docker container for portable use
+## 📘 Usage
 
-license: MIT
+### ➕ Add Transaction
 
-author: Himanshu (GitHub: yourusername)
+```bash
+./gofinance add
+```
+
+Fill in the prompts like type (income/expense), amount, category, note.
+
+### 📂 View Transactions
+
+```bash
+./gofinance view
+```
+
+### 📤 Export to CSV
+
+```bash
+./gofinance export
+```
+
+Saves `transactions.csv` to your current directory.
+
+### 📊 Summary
+
+```bash
+./gofinance summary
+```
