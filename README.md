@@ -3,7 +3,7 @@
 
 **GoFinance** is a powerful and lightweight command-line application that allows users to manage personal finances with ease. Designed for simplicity and speed, it helps track income, expenses, generate summaries, and export records—all from your terminal. The tool is ideal for developers and CLI enthusiasts looking for a no-frills budget tracker with local storage.
 
----
+
 
 ## 🚀 Features
 
@@ -14,7 +14,7 @@
 - 💾 Stores data locally using embedded BoltDB  
 - ⚡ Fast and efficient experience with a user-friendly CLI interface
 
----
+
 
 ## 🧱 Tech Stack
 
@@ -22,7 +22,7 @@
 - **Cobra** – Framework for building CLI applications  
 - **BoltDB** – Lightweight embedded key-value database for local persistence
 
----
+
 
 ## 🛠️ Installation
 
@@ -35,7 +35,7 @@ go build -o gofinance
 ./gofinance
 ```
 
----
+
 
 ## 📘 Usage Guide
 
@@ -51,7 +51,7 @@ go build -o gofinance
   - Category (e.g., food, salary, rent)
   - Optional note
 
----
+
 
 ### 📂 View Transactions
 
@@ -61,7 +61,7 @@ go build -o gofinance
 
 - Displays a list of all stored transactions.
 
----
+
 
 ### 📤 Export Transactions to CSV
 
@@ -71,7 +71,7 @@ go build -o gofinance
 
 - Saves a `transactions.csv` file in the current directory.
 
----
+
 
 ### 📊 View Summary Report
 
@@ -84,7 +84,7 @@ go build -o gofinance
   - Total expenses  
   - Current balance
 
----
+
 
 ## 🧭 Future Enhancements
 
@@ -96,14 +96,3 @@ go build -o gofinance
 - 🗓️ Monthly/weekly budgeting and alerts  
 - 🌐 REST API version to enable remote access and mobile integrations
 
----
-
-## 🤝 Contributing
-
-Feel free to fork the repository, suggest features, and open pull requests. Contributions are welcome!
-
----
-
-## 📎 License
-
-This project is licensed under the [MIT License](LICENSE). Open-source and free to use.
